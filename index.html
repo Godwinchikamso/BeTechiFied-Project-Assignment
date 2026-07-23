@@ -146,13 +146,15 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  max-width: 50%; /* Gives enough breathing room for the full art */
 }
 
 .hero-illustration {
-  max-width: 380px;
   width: 100%;
+  max-width: 480px; /* Increased to fit the full illustration properly */
   height: auto;
   object-fit: contain;
+  mix-blend-mode: multiply; /* Blends transparent or white background neatly into the page color */
 }
 
 /* Footer Section */
