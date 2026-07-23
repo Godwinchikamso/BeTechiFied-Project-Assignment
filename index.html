@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medium – Where good ideas find you.</title>
-  <style>/* Reset and Base Styles */
+  <style>/* Reset and Base Styles *//* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,6 @@
   --text-dark: #242424;
   --border-color: #191919;
   --green-btn: #1a8917;
-  --green-mobile-btn: #166e14;
 }
 
 body {
@@ -146,19 +145,14 @@ body {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-.illustration-placeholder {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
-.flower-icon {
-  font-size: 180px;
-  color: #23a036;
-  text-align: right;
-  user-select: none;
+.hero-illustration {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Footer Section */
@@ -225,6 +219,7 @@ body {
     gap: 20px;
   }
 }
+
 </style>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -255,11 +250,11 @@ body {
         <a href="#" class="btn btn-hero">Start reading</a>
       </div>
 
+            <!-- Right Graphic/Illustration Container -->
       <div class="hero-image desktop-only">
-        <div class="illustration-placeholder">
-          <div class="flower-icon">✿</div>
-        </div>
+        <img src="flower.png" alt="Medium Illustration" class="hero-illustration">
       </div>
+
     </div>
   </main>
 
