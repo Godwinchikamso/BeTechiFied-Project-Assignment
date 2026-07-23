@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medium – Where good ideas find you.</title>
-  <style>/* Reset and Base Styles *//* Reset and Base Styles */
+  <style>
+    /* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -108,6 +109,7 @@ body {
   align-items: center;
   padding: 60px 24px;
   border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
 }
 
 .hero-container {
@@ -117,10 +119,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 
 .hero-content {
   max-width: 550px;
+  flex: 1;
 }
 
 .hero-title {
@@ -146,15 +150,15 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 50%; /* Gives enough breathing room for the full art */
+  max-width: 500px;
 }
 
 .hero-illustration {
   width: 100%;
-  max-width: 480px; /* Increased to fit the full illustration properly */
+  max-width: 460px;
   height: auto;
   object-fit: contain;
-  mix-blend-mode: multiply; /* Blends transparent or white background neatly into the page color */
+  mix-blend-mode: multiply; /* Blends white/transparent image borders right into the background */
 }
 
 /* Footer Section */
@@ -182,7 +186,7 @@ body {
   color: var(--text-dark);
 }
 
-/* Responsive Design (Mobile / Small Screen adjustments) */
+/* Responsive Design (Mobile adjustments) */
 @media (max-width: 768px) {
   .desktop-only {
     display: none !important;
@@ -208,7 +212,6 @@ body {
     margin-bottom: 36px;
   }
 
-  /* Matching the green button from the mobile design */
   .btn-hero {
     background-color: var(--green-btn);
     width: 100%;
@@ -222,14 +225,16 @@ body {
   }
 }
 
-</style>
+  </style>
   
+  <!-- Google Fonts for Serif Heading and Sans-Serif Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=GT+Super+Text&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Navigation Bar -->
   <header class="navbar">
     <div class="nav-container">
       <a href="#" class="logo">Medium</a>
@@ -244,6 +249,7 @@ body {
     </div>
   </header>
 
+  <!-- Hero Main Section -->
   <main class="hero-section">
     <div class="hero-container">
       <div class="hero-content">
@@ -252,14 +258,14 @@ body {
         <a href="#" class="btn btn-hero">Start reading</a>
       </div>
 
-            <!-- Right Graphic/Illustration Container -->
+      <!-- Right Graphic/Illustration Container -->
       <div class="hero-image desktop-only">
         <img src="flower.png" alt="Medium Illustration" class="hero-illustration">
       </div>
-
     </div>
   </main>
 
+  <!-- Footer Section -->
   <footer class="footer">
     <div class="footer-container">
       <a href="#">Help</a>
